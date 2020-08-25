@@ -17,6 +17,15 @@ const connect = function() {
     conn.write(`Name: ${name}`);
   });
 
+// //we also can use setTimeout (() => {
+//   conn.write('Move: up')
+// }, 1000 * i) where i could index of a for loop
+  //   conn.on('connect', () => {
+//    setInterval(() => {
+//     conn.write('Move: up')
+//    }, 1000);
+// });
+
   conn.on('data', (message) => {
     console.log(message);
   })
