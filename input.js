@@ -18,6 +18,15 @@ const handleUserInput = function(stdin) {
     else if (key === 'd') {
       connection.write("Move: right");
     }
+    else if (key === 'f') {
+      connection.write("Say: I'am faster than you");
+    }
+    else if (key === 'x') {
+      connection.write("Say: I will win");
+    }
+    else if (key === 'g') {
+      connection.write("Say: GoodBye");
+    }
   });
 };
 
